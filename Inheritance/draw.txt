@@ -1,0 +1,56 @@
+/*5) create abstract class Shape. declare "draw()" function as abstract. From 
+ * this class define "Triangle","Polygon" and "Circle" .
+create an array of Shape having 3 elements.
+store child objects into this array . and call
+their draw function.*/
+package INH;
+
+abstract class Shape {
+	abstract void draw();
+	
+}
+class Triangle extends Shape
+{
+	void draw()
+	{
+		System.out.println("draw triangle");
+	}
+}
+
+class Polygon extends Shape
+{
+	void draw()
+	{
+		System.out.println("draw Polygon");
+	}
+}
+
+class Circle extends Shape
+{
+	void draw()
+	{
+		System.out.println("draw Circle");
+	}
+}
+
+public class Demo6
+{
+	public static void main(String[] args) {
+		int i=0;		
+	
+	Shape A[]=new Shape[3];
+	A[0]=new Triangle();
+	A[1]=new Polygon();
+	A[2]=new Circle();
+	
+	for(i=0;i<3;i++)
+	{
+		A[i].draw();
+	}
+	
+	/*A[0].draw();
+	A[1].draw();
+	A[2].draw();
+	*/
+	}
+}

@@ -1,0 +1,23 @@
+package display;
+class Table
+{
+	private int num=1;
+	void print1()
+	{
+		do
+		{
+			System.out.println(num);
+			num++;
+		}while(num!=11);
+	}
+
+	}
+public class display {
+
+	public static void main(String[] args) {
+	Table t1=new Table();
+	t1.print1();
+	}
+
+}
+	

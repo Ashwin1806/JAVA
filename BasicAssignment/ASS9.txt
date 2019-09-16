@@ -1,0 +1,34 @@
+
+class sampil
+{
+	int var4=23;
+	int var5=43;
+	sampil(int var4,int var5)
+	{
+		this.var4=var4;
+
+		this.var5=var5;
+		
+		}
+	sampil()
+	{
+		//System.out.println(var4 + "\t" + var5);
+	}
+	void disp()
+	{
+		System.out.println(var4 + "\t" + var5);
+	}
+	
+	}
+
+public class Test {
+public static void main(String args[])
+{
+	sampil a=new sampil();
+	a.disp();
+	sampil b=new sampil(45,56);
+	b.disp();
+	
+	
+}
+	}

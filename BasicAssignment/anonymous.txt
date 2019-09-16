@@ -1,0 +1,21 @@
+
+class  ano
+{
+	int var3=4;
+	void disp()
+	{
+		System.out.println(var3);
+	}
+	
+	}
+
+public class sample3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ano a=new ano();
+a.disp();
+new ano().disp();
+	}
+
+}

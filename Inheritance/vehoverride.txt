@@ -1,0 +1,26 @@
+package INH;
+
+class vehicle
+{
+	public void start()
+	{
+	System.out.println("VEHICLE Start");
+	}
+}
+class Fourwheeler extends vehicle
+{
+	public void start()
+	{
+	System.out.println("Fourwheeler Start");
+	}
+	
+}
+public class demo
+{
+public static void main(String args[])
+	{	
+	vehicle F=new Fourwheeler();
+	F.start();
+	
+	}
+}

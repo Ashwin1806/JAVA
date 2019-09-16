@@ -1,0 +1,25 @@
+package sam;
+class sam
+{
+int var1;
+
+public int getVar1() {
+	return var1;
+	
+}
+
+public void setVar1(int var1) {
+	this.var1 = var1;
+}
+
+}
+public class sample2 {
+
+	public static void main(String[] args)
+	{
+	sam a=new sam();
+			a.setVar1(10);
+			System.out.println(a.getVar1());
+	}
+
+}

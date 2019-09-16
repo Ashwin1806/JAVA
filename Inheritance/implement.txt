@@ -1,0 +1,31 @@
+/* Define class "Parent1" with some data.
+Define interface "Parent2" with some data.
+Derive a class "Child" from "Parent1" and "Parent2", instantiate it and call the members.*/
+package INH;
+
+class  Parent1
+{
+	int a,b,c;
+	void print(){
+	System.out.println("Baap hu mai");
+}
+}
+interface Parent2
+{
+	void print();
+	}
+
+/*class Child extends Parent1 implements Parent2
+{
+
+}
+*/
+
+
+public class Test extends Parent1 implements Parent2
+{
+public static void main(String[] args) {
+	Parent1 ref= new Parent1();
+	ref.print();
+}
+}

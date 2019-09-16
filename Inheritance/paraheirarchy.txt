@@ -1,0 +1,63 @@
+/*3) Go for Hierarchical inheritance,
+create instances of child class and observe constructor invocation.*/
+package INH;
+
+class vehicle
+{
+	int a=0;
+	public void start()
+	{
+	System.out.println("VEHICLE Start");
+	}
+	vehicle(int a)
+	{
+		System.out.println("BAAP");
+	}
+}
+class Fourwheeler extends vehicle
+{
+	int b=0;
+	public void start()
+	{
+	System.out.println("Fourwheeler Start");
+	}
+	Fourwheeler()
+	{
+		super(10);
+
+	}
+	Fourwheeler(int b)
+	{
+		super(60);
+
+	}
+}
+	class Threewheeler extends vehicle
+	{
+		int c=0;
+		public void start()
+		{
+		System.out.println("Threewheeler Start");
+		}
+
+		Threewheeler()
+		{
+			super(30);
+
+		}
+		Threewheeler(int c)
+		{
+			super(40);
+
+		}
+}
+public class demo
+{
+public static void main(String args[])
+	{	
+	vehicle F=new Fourwheeler();
+	F.start();
+	vehicle T=new Threewheeler();
+	T.start();
+	}
+}

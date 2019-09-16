@@ -1,0 +1,52 @@
+/*Create a class "Top1" with "disp1()" method.
+From this class Derive "Bottom1", "Bottom2" and "Bottom3" classes ,override the "disp1()".
+Now show how will u achieve dynamic polymorphism. */
+package INH;
+
+class sword extends weapon
+{
+	void attack()
+	{
+		System.out.println("KILL");
+	}
+}
+class gun extends weapon
+{
+	 void fillbullet()
+	{
+		System.out.println("fill bullets");
+	}
+	void attack()
+	{
+		System.out.println("FIRE");
+	}
+}
+class weapon
+{ void attack()
+	{
+	
+	}
+	public static void perform(weapon ref)
+	{
+		
+	if(ref instanceof gun)
+	{
+		gun a=(gun)ref;
+		a.fillbullet();
+	}
+	ref.attack();
+	}
+public static void main(String args[])
+	{
+	/*top1 xt=new bottom2();
+	xt.disp1();	
+	bottom2 yt=new bottom2();
+	yt.print();*/
+/*	bottom2 yt=new bottom2();
+	yt.disp1();	
+	bottom3 zt=new bottom3();
+	zt.disp1();*/	
+	perform(new gun());
+	/*perform(new sword());*/
+	}
+}

@@ -1,0 +1,29 @@
+package inheritance;
+
+ class IBM 
+{
+
+	void disp1()
+	{
+	System.out.println("BASE PARENT");
+	}
+
+}
+class GBM extends IBM
+{
+void disp()
+{
+	System.out.println("BETA");
+}
+}
+
+public class Demo15
+{
+	
+public static void main(String[] args)
+{
+	GBM G1=new GBM();
+	G1.disp1();
+
+}
+}

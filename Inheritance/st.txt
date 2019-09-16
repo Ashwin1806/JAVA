@@ -1,0 +1,44 @@
+
+/* Create a multi-level inheritance , instantiate the child class and observe constructor 
+invocation.Also show, if needed how will u invoke parent class constructor from child class ?*/
+package INH;
+
+class parent
+{
+int a = 0;
+parent(int a)
+	{
+		System.out.println(a);
+		}
+	
+final void disp() 
+{
+	System.out.println("Papa");
+}
+}
+
+class child extends parent {
+	void disp1() 
+	{
+		System.out.println("beta");
+	}
+	child()
+	{
+		super(100);
+		
+	}
+}
+
+public class demo 
+{
+	public static void main(String args[])
+	{
+		child x = new child();
+		x.disp();
+		parent y=new child();
+		y.disp();
+
+		}
+	}
+
+
